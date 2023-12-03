@@ -92,6 +92,7 @@
             cbbSupplier.Name = "cbbSupplier";
             cbbSupplier.Size = new Size(236, 33);
             cbbSupplier.TabIndex = 11;
+            cbbSupplier.SelectedIndexChanged += cbbSupplier_SelectedIndexChanged;
             // 
             // btnAdd
             // 

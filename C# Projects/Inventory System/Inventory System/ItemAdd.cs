@@ -28,5 +28,10 @@ namespace Inventory_System
 
             this.Close();
         }
+
+        private void cbbSupplier_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

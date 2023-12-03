@@ -1,12 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Inventory_System
@@ -16,6 +10,7 @@ namespace Inventory_System
         public frmInventory()
         {
             InitializeComponent();
+            LoadData(); // Load data when the form is initially created
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -37,38 +32,11 @@ namespace Inventory_System
             frmSupplierAdd frmSupplierAdd = new frmSupplierAdd();
             frmSupplierAdd.ShowDialog();
         }
-        private void Inventory(object sender, EventArgs e)
-        {
-            LoadData();
-        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            {
-                try
-                {
-                    using (MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=''"))
-                    {
-                        connection.Open();
-
-                        string query = "SELECT * FROM =inventory.products";
-                        MySqlCommand command = new MySqlCommand(query, connection);
-
-                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
-                        {
-                            DataTable dataTable = new DataTable();
-                            adapter.Fill(dataTable);
-
-                            // Assuming dataGridView1 is the name of your DataGridView control
-                            dataGridView1.DataSource = dataTable;
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-            }
+            // This event is typically used for handling clicks on cell contents.
+            // You may not need anything here for now.
         }
 
         private void LoadData()
@@ -95,14 +63,7 @@ namespace Inventory_System
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message);
-
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
     }
-
 }

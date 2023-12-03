@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luz Nicole\\Downloads\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj": {}
+    "C:\\Users\\Luz Nicole\\OneDrive\\Desktop\\acp\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luz Nicole\\Downloads\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj": {
+    "C:\\Users\\Luz Nicole\\OneDrive\\Desktop\\acp\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luz Nicole\\Downloads\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj",
+        "projectUniqueName": "C:\\Users\\Luz Nicole\\OneDrive\\Desktop\\acp\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj",
         "projectName": "Inventory System",
-        "projectPath": "C:\\Users\\Luz Nicole\\Downloads\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj",
+        "projectPath": "C:\\Users\\Luz Nicole\\OneDrive\\Desktop\\acp\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj",
         "packagesPath": "C:\\Users\\Luz Nicole\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luz Nicole\\Downloads\\C# Projects\\Inventory System\\Inventory System\\obj\\",
+        "outputPath": "C:\\Users\\Luz Nicole\\OneDrive\\Desktop\\acp\\C# Projects\\Inventory System\\Inventory System\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

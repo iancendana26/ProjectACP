@@ -1792,23 +1792,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Luz Nicole\\.nuget\\packages\\": {},
+    "C:\\Users\\quixi\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luz Nicole\\Downloads\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj",
+      "projectUniqueName": "C:\\Users\\quixi\\OneDrive\\Documents\\ProjectACP\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj",
       "projectName": "Inventory System",
-      "projectPath": "C:\\Users\\Luz Nicole\\Downloads\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj",
-      "packagesPath": "C:\\Users\\Luz Nicole\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luz Nicole\\Downloads\\C# Projects\\Inventory System\\Inventory System\\obj\\",
+      "projectPath": "C:\\Users\\quixi\\OneDrive\\Documents\\ProjectACP\\C# Projects\\Inventory System\\Inventory System\\Inventory System.csproj",
+      "packagesPath": "C:\\Users\\quixi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\quixi\\OneDrive\\Documents\\ProjectACP\\C# Projects\\Inventory System\\Inventory System\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Luz Nicole\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\quixi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

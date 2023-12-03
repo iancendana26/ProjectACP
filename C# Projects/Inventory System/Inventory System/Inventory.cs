@@ -44,7 +44,7 @@ namespace Inventory_System
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            { 
+            {
                 try
                 {
                     using (MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=''"))
@@ -71,36 +71,38 @@ namespace Inventory_System
             }
         }
 
-            private void LoadData()
+        private void LoadData()
+        {
+            try
             {
-                try
+                using (MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=''"))
                 {
-                    using (MySqlConnection connection = new MySqlConnection("datasource=localhost;port=3306;username=root;password=''"))
+                    connection.Open();
+
+                    string query = "SELECT * FROM inventory.products";
+                    MySqlCommand command = new MySqlCommand(query, connection);
+
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
                     {
-                        connection.Open();
+                        DataTable dataTable = new DataTable();
+                        adapter.Fill(dataTable);
 
-                        string query = "SELECT * FROM inventory.products";
-                        MySqlCommand command = new MySqlCommand(query, connection);
-
-                        using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
-                        {
-                            DataTable dataTable = new DataTable();
-                            adapter.Fill(dataTable);
-
-                            // Assuming dataGridView1 is the name of your DataGridView control
-                            dataGridView1.DataSource = dataTable;
-                        }
+                        // Assuming dataGridView1 is the name of your DataGridView control
+                        dataGridView1.DataSource = dataTable;
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-
-                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
 
-
-
+            }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
+
+}
